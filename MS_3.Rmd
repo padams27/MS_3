@@ -1,0 +1,22 @@
+---
+title: "MS_3"
+author: "Paddy Adams"
+date: "26/02/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(readxl)
+
+ref_data <- read_csv("data/EU-referendum-result-data.csv")
+age <- read_excel("data/age_data.xls", skip = 9)
+un_emp_num <- read_excel("data/unemployment - number.xls", skip = 9)
+un_emp_percent <- read_excel("data/unemployment - percentages.xls", skip = 9)
+
+```
+
+## About
+
+
