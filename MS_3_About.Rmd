@@ -1,0 +1,30 @@
+---
+title: "MS_3: About"
+author: "Paddy Adams"
+date: "26/02/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(readxl)
+
+ref_data <- read_csv("data/EU-referendum-result-data.csv")
+age <- read_excel("data/age_data.xls", skip = 9)
+un_emp_num <- read_excel("data/unemployment - number.xls", skip = 9)
+un_emp_percent <- read_excel("data/unemployment - percentages.xls", skip = 9)
+
+```
+
+## About
+
+The aim of my project is to explore the relationship between the 2016 UK 'Brexit' referendum and other data points 
+relating the region where the votes were cast to the age and employment levels. The point of this is to try and 
+either dispel or prove the common belief that the older the voter was the more likely they were to vote to leave 
+the EU. The same is true for the supposed realtionship between unemployment and voting for leave. To do this I have 
+used the UK goverment EU referendum data and the 2011 nationwide census data, both freely available online. 
+
+
+My Github repository: https://github.com/padams27/MS_3
+
